@@ -1,0 +1,45 @@
+.code-dialog {
+    outline: none;
+    width: 80%;
+    /* height: 80%; */
+   
+    background-color: #282c34;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.code-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.close-icon {
+    color: #90ff11;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.code-window-code {
+    width: 100%;
+    height: 200px;
+    /* overflow: auto; */
+}
+
+.code-pre {
+    width: 100%;
+}
+
+.CodeWindowTitle{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: normal;
+}

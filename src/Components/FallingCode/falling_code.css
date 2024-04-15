@@ -1,0 +1,28 @@
+
+@keyframes fall1 {
+    from {top: -5%;}
+    to {top: 110%;}
+  }
+  
+  @keyframes fall2 {
+    from {top: -10%;}
+    to {top: 110%;}
+  }
+  
+  @keyframes fall3 {
+    from {top: -15%;}
+    to {top: 110%;}
+  }
+  
+ 
+.fallingText {
+    width: fit-content;
+    color: lightgreen;
+    cursor: default;
+    animation-duration: 1s;
+    position: fixed;
+    top: -5%;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    z-index: -10;
+  }

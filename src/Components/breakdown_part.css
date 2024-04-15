@@ -1,0 +1,16 @@
+
+.BreakdownPart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+
+}
+
+.SearchIcon {
+    color: #90ff11;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

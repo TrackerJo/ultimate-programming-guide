@@ -1,0 +1,45 @@
+/* (A) SPEECH BOX */
+.snippet {
+    /* (A1) FONT & COLORS */
+    font-size: 1.2em;
+    color: #fff;
+    background: #282c34;
+    
+    /* (A2) DIMENSIONS */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: start;
+}
+
+
+.snippet {
+    position: relative;
+
+    left: -15px;
+    /* margin: 30px; */
+  }
+.snippetTitle{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: normal;
+}
+
+.snippetTopbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.copyIcon{
+    color: #90ff11;
+    cursor: pointer;
+
+    height: 20px;
+}
+
+.snippet-code {
+    /* width: 100%; */
+    max-height: 200px;
+}
