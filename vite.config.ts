@@ -10,7 +10,7 @@ const outDir = resolve(__dirname, 'dist')
 export default defineConfig({
   plugins: [react()],
   root,
-  base: '/',
+  base: '/ultimate-programming-guide/',
   build: {
     outDir,
     emptyOutDir: true,
