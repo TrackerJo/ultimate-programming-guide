@@ -21,6 +21,10 @@ export default defineConfig({
         webDesignTutorials: resolve(root, 'WebDesign', 'Tutorials', 'index.html'),
         webDesignResources: resolve(root, 'WebDesign', 'resources.html'),
         webDesignProjects: resolve(root, 'WebDesign', 'Projects', 'index.html'),
+        webDesignTodoList: resolve(root, 'WebDesign', 'Projects', 'ToDo','index.html'),
+        webDesignTicTacToe: resolve(root, 'WebDesign', 'Projects', 'TicTacToe', 'index.html'),
+        webDesignTodoListE: resolve(root, 'WebDesign', 'Projects', 'Examples' ,'Todo.html'),
+        webDesignTicTacToeE: resolve(root, 'WebDesign', 'Projects', 'Examples' ,'TicTacToe.html'),
 
       }
     }

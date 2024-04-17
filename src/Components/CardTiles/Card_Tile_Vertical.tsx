@@ -1,4 +1,6 @@
 import "./Card_Tile_Vertical.css";
+import {isMobile} from 'react-device-detect';
+
 
 type CardTileProps = {
     title: string;
@@ -46,7 +48,7 @@ function CardTileVertical({title, subtitle, theme, onClick, difficulty}: CardTil
 
 
     return (
-        <div className={"card " + theme} onClick={onClick}>
+        <div className={"card " + theme + (isMobile ? " isMobile" : "")} onClick={onClick}>
             <div className="card-content"> 
                 <h3 className="card-title">{title}</h3>
                 <h4 className="card-subtitle">

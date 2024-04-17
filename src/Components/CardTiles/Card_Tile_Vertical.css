@@ -94,10 +94,25 @@
   color: white; 
 }
 
+.card.isMobile > .card-content {
+  background-position: -10% 0%;
+}
+
+.card.isMobile > .card-icon {
+  color: white; 
+}
+
 .card:hover > .card-content > .card-subtitle > .card-subtitle-word {  
   opacity: 1;
   transform: translateY(0%);
   transition: opacity 0ms, transform 200ms cubic-bezier(.90, .06, .15, .90);
+}
+
+.card.isMobile > .card-content > .card-subtitle > .card-subtitle-word {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity 0ms, transform 200ms cubic-bezier(.90, .06, .15, .90);
+
 }
 
 .card-content {
@@ -458,3 +473,26 @@
   width: 100%;
   z-index: 1;
 }
+
+/* .isMobile {
+  background: linear-gradient(
+    130deg, 
+    green 0% 66.5%, 
+
+    lightgreen 83%, 
+    darkgreen 100%
+  );
+  background-position: 0% 0%;
+   background-size: 300% 300%; 
+
+
+  left: 0px;
+  pointer-events: none;
+  z-index: 1;
+  border: none;
+
+  background-position: 100% 100%;
+  transform: scale(1.08, 1.03);
+
+
+} */

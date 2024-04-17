@@ -57,7 +57,7 @@ function WebDesignResources() {
           
         </div>
         <div className='BackCenter'>
-          <CircleButton text="Back" onClick={() => {window.location.href = "/WebDesign/"}}/>
+          <CircleButton text="Back" onClick={() => {window.location.href = "/ultimate-programming-guide/WebDesign/"}}/>
         </div>
         
     </div>
