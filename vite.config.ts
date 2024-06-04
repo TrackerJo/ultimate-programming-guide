@@ -25,6 +25,8 @@ export default defineConfig({
         webDesignTicTacToe: resolve(root, 'WebDesign', 'Projects', 'TicTacToe', 'index.html'),
         webDesignTodoListE: resolve(root, 'WebDesign', 'Projects', 'Examples' ,'Todo.html'),
         webDesignTicTacToeE: resolve(root, 'WebDesign', 'Projects', 'Examples' ,'TicTacToe.html'),
+        webDesignCookieClicker: resolve(root, 'WebDesign', 'Projects', 'CookieClicker', 'index.html'),
+        webDesignCookieClickerE: resolve(root, 'WebDesign', 'Projects', 'Examples', 'CookieClicker.html')
 
       }
     }

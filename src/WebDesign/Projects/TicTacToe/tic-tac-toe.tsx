@@ -208,7 +208,7 @@ function checkTie(){
           <div className="section" id="overview">
                   <h2>Project Overview</h2>
                   <p>Create a simple website with the ability to play Tic Tac Toe. Create an algorithm to check if a player has won the game, and logic for when the game ends</p>
-                  <p>Heres an examle website: <a href={"./Examples/TicTacToe.html"} target="_blank">Tic Tac Toe Example</a></p>
+                  <p>Heres an examle website: <a href={"../Examples/TicTacToe.html"} target="_blank">Tic Tac Toe Example</a></p>
               </div>
               <div className="sections">
                   <div className="section html">
@@ -219,7 +219,7 @@ function checkTie(){
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./TodoE.css" />
+
     <title>Todo List Example</title>
   </head>
   <body>

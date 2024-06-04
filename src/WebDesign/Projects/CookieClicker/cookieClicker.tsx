@@ -1,6 +1,6 @@
 
 
-import './todo.css'
+import './cookieClicker.css'
 
 import FallingCode from '../../../Components/FallingCode/falling_code'
 
@@ -19,44 +19,128 @@ import BreakdownPart from '../../../Components/breakdown_part'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <TodoProject />
+    <CookieClickerProject />
   </React.StrictMode>,
 )
 
 
-function TodoProject() {
+function CookieClickerProject() {
   const htmlCodeWindowRef = useRef<HTMLDialogElement>(null)
   const cssCodeWindowRef = useRef<HTMLDialogElement>(null)
   const jsCodeWindowRef = useRef<HTMLDialogElement>(null)
 
 
   const htmlCode: string = `<!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="./TodoE.css" />
-      <title>Todo List Example</title>
+      <title>Cookie Clicker Example</title>
+      <link rel="stylesheet" href="./cookieClicker.css" />
   </head>
   <body>
-    <h1 class="title">Todo List</h1>
-    <ul class="list">
-    
-    </ul>
-    <div class="add">
-        <input type="text" id="addInput" placeholder="New Todo item">
-        <button id="addBtn">Add to List</button>
-    </div>
-    <script src="./TodoE.js" defer></script>
+     
+      <h2 id="cookieCount">Cookies: 0</h2>
+      <label id="cookiesPerSecond">Cookies Per Second: 0</label>
+      <br>
+      <br>
+      <img src="./cookie.png" alt="cookie" id="cookieImg">
+      <h2><u>Buildings</u></h2>
+      <div class="buildings">
+          <div class="building" id="cursor">
+              <label class="building-title">Cursor</label>
+              <br>
+              <label class="building-price" id="cursor-price">10 Cookies</label>
+          </div>
+          
+  
+      </div>
+      <h2><u>Upgrades</u></h2>
+  
+      <div class="upgrades">
+          <div class="upgrade" id="mouse">
+              <div class="upgrade-icon">
+                  <img src="" alt="mouse">
+              </div>
+              <div class="upgrade-popup">
+                  <label>Mouse Upgrade</label>
+                  <br>
+                  <label class="price">Price: 50 cookies</label>
+                  <br>
+                  <label for="">Discription: Increase the amount of cookies gained per click</label>
+              </div>
+          </div>
+      </div>
+      <script src="./CookieClicker.js" type="module"></script>
+  
   </body>
-</html>
+  </html>
     `
 
-    const cssCode: string = `.item{
-  display: flex;
-  gap: 10px;
-  padding: 5px;
-}
+    const cssCode: string = `#cookieImg {
+      width: 100px;
+      cursor: pointer;
+  }
+  
+  body {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+  }
+  
+  .building{
+      border: 1px black solid;
+      width: 100px;
+      display: block;
+      padding: 5px;
+      cursor: pointer;
+  
+  }
+  
+  .building-title{
+      font-weight: bold;
+      cursor: pointer;
+  }
+  
+  .building-price {
+      cursor: pointer;
+  }
+  
+  .upgrade-icon{
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      border: 1px black dashed;
+  }
+  
+  .upgrade-popup {
+      display: none;
+      position: relative;
+      top:-60px;
+      left:60px;
+      border: 1px black solid;
+      padding: 10px;
+      /* width: 100px; */
+      /* height: 100px; */
+  
+  }
+  
+  .upgrade:hover .upgrade-popup{
+      display:inline-block;
+  
+  
+  }
+  
+  .upgrade{
+      /* position: absolute; */
+  }
+  
+  .upgrades {
+      display: flex;
+  
+  }  
     `
 
     const jsCode: string = `//Get the add button, the input, and the list
@@ -163,11 +247,11 @@ function deleteItem(e){
     <>
       <div id="welcome" className="selectedDiv">
         <FallingCode/>
-        <h1 className="title">Todo Project</h1>
+        <h1 className="title">Cookie Clicker Project</h1>
         <div className="section" id="overview">
                 <h2>Project Overview</h2>
-                <p>Create a simple website with the ability to play Tic Tac Toe. Create an algorithm to check if a player has won the game, and logic for when the game ends</p>
-                <p>Heres an examle website: <a href={"../Examples/Todo.html"} target="_blank">Todo List Example</a></p>
+                <p>Create cookie that can be clicked and upgrades to make gameplay more interesting</p>
+                <p>Heres an examle website: <a href={"../Examples/CookieClicker.html"} target="_blank">Cookie Clicker Example</a></p>
         </div>
         <div className="sections">
             <div className="section html">
@@ -178,20 +262,13 @@ function deleteItem(e){
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Todo List Example</title>
+    <title>Cookie Clicker Example</title>
   </head>
   <body>
   </body>
 </html>`}/>
-                   <BreakdownPart text={<p>Import css stylesheet <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">link</a> in <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">head</a></p>} snippet={`<link rel="stylesheet" href="./TodoE.css" />`}/>
-                  <BreakdownPart text='Create Title to display title of list' snippet={`<h1 class="title">Todo List</h1>`}/>
-                  <BreakdownPart text={<p>Create <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank">ul</a> element to hold list held by <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" target="_blank">li</a> elements</p>} snippet={`<ul class="list">
-  //List items will go here     
-</ul>`}/>
-                  <BreakdownPart text={<p>Create <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input" target='_blank'>input</a> element to add new items to list</p>} snippet={`<input type="text" id="addInput" placeholder="New Todo item">`}/>
-                  <BreakdownPart text={<p>Create <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button" target='_blank'>button</a> element to add new items to list</p>} snippet={`<button id="addBtn">Add to List</button>`}/>
-                  <BreakdownPart text={<p>Import <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#basic_usage" target='_blank'>script</a> at end of body</p>} snippet={`<script src="./todoE.js"></script>`}/>
+                   <BreakdownPart text={<p>Import css stylesheet <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">link</a> in <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">head</a></p>} snippet={`<link rel="stylesheet" href="./CookieClickerE.css" />`}/>
+                  <BreakdownPart text={<p>Import <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#basic_usage" target='_blank'>script</a> at end of body</p>} snippet={`<script src="./cookieClickerE.js"></script>`}/>
 
                     
                 </div>
@@ -331,4 +408,4 @@ document.addEventListener('DOMContentLoaded', () => {
   )
 }
 
-export default TodoProject
+export default CookieClickerProject
