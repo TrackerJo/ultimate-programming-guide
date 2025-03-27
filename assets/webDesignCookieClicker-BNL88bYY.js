@@ -1,16 +1,13 @@
-import"./modulepreload-polyfill-B5Qt9EMX.js";import{c as o,j as e,R as a,r as i,F as r}from"./index-BY0EH8Is.js";import{C as m}from"./circle_button-CFlhAXSr.js";import{B as t,C as l}from"./breakdown_part-CfIeVa2g.js";o.createRoot(document.getElementById("root")).render(e.jsx(a.StrictMode,{children:e.jsx(c,{})}));function c(){const s=i.useRef(null),d=i.useRef(null),n=i.useRef(null);return e.jsxs(e.Fragment,{children:[e.jsxs("div",{id:"welcome",className:"selectedDiv",children:[e.jsx(r,{}),e.jsx("h1",{className:"title",children:"Todo Project"}),e.jsxs("div",{className:"section",id:"overview",children:[e.jsx("h2",{children:"Project Overview"}),e.jsx("p",{children:"Create a simple website with the ability to play Tic Tac Toe. Create an algorithm to check if a player has won the game, and logic for when the game ends"}),e.jsxs("p",{children:["Heres an examle website: ",e.jsx("a",{href:"./Examples/Todo.html",target:"_blank",children:"Todo List Example"})]})]}),e.jsxs("div",{className:"sections",children:[e.jsxs("div",{className:"section html",children:[e.jsx("h2",{className:"sectionTitle",children:"HTML Breakdown"}),e.jsxs("div",{className:"Breakdown",children:[e.jsx(t,{text:"Create Blank HTML Website",snippet:`<!DOCTYPE html>
+import"./modulepreload-polyfill-B5Qt9EMX.js";import{c as o,j as e,R as a,r as i,F as r}from"./index-DxspbE1b.js";import{C as m}from"./circle_button-DXnc18ZB.js";import{B as t,C as l}from"./breakdown_part-0HVEa2Fn.js";o.createRoot(document.getElementById("root")).render(e.jsx(a.StrictMode,{children:e.jsx(c,{})}));function c(){const s=i.useRef(null),d=i.useRef(null),n=i.useRef(null);return e.jsxs(e.Fragment,{children:[e.jsxs("div",{id:"welcome",className:"selectedDiv",children:[e.jsx(r,{}),e.jsx("h1",{className:"title",children:"Cookie Clicker Project"}),e.jsxs("div",{className:"section",id:"overview",children:[e.jsx("h2",{children:"Project Overview"}),e.jsx("p",{children:"Create cookie that can be clicked and upgrades to make gameplay more interesting"}),e.jsxs("p",{children:["Heres an examle website: ",e.jsx("a",{href:"../Examples/CookieClicker.html",target:"_blank",children:"Cookie Clicker Example"})]})]}),e.jsxs("div",{className:"sections",children:[e.jsxs("div",{className:"section html",children:[e.jsx("h2",{className:"sectionTitle",children:"HTML Breakdown"}),e.jsxs("div",{className:"Breakdown",children:[e.jsx(t,{text:"Create Blank HTML Website",snippet:`<!DOCTYPE html>
   <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./TodoE.css" />
-    <title>Todo List Example</title>
+    <title>Cookie Clicker Example</title>
   </head>
   <body>
   </body>
-</html>`}),e.jsx(t,{text:e.jsxs("p",{children:["Import css stylesheet ",e.jsx("a",{href:"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link",children:"link"})," in ",e.jsx("a",{href:"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head",children:"head"})]}),snippet:'<link rel="stylesheet" href="./TodoE.css" />'}),e.jsx(t,{text:"Create Title to display title of list",snippet:'<h1 class="title">Todo List</h1>'}),e.jsx(t,{text:e.jsxs("p",{children:["Create ",e.jsx("a",{href:"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul",target:"_blank",children:"ul"})," element to hold list held by ",e.jsx("a",{href:"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li",target:"_blank",children:"li"})," elements"]}),snippet:`<ul class="list">
-  //List items will go here     
-</ul>`}),e.jsx(t,{text:e.jsxs("p",{children:["Create ",e.jsx("a",{href:"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input",target:"_blank",children:"input"})," element to add new items to list"]}),snippet:'<input type="text" id="addInput" placeholder="New Todo item">'}),e.jsx(t,{text:e.jsxs("p",{children:["Create ",e.jsx("a",{href:"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button",target:"_blank",children:"button"})," element to add new items to list"]}),snippet:'<button id="addBtn">Add to List</button>'}),e.jsx(t,{text:e.jsxs("p",{children:["Import ",e.jsx("a",{href:"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#basic_usage",target:"_blank",children:"script"})," at end of body"]}),snippet:'<script src="./todoE.js"><\/script>'})]}),e.jsx("br",{}),e.jsx("button",{onClick:()=>{s.current.showModal()},children:"View HTML Code"})]}),e.jsxs("div",{className:"section css",children:[e.jsx("h2",{children:"CSS Breakdown"}),e.jsx("div",{className:"Breakdown",children:e.jsx(t,{text:e.jsxs("p",{children:["Style an item as a ",e.jsx("a",{href:"https://developer.mozilla.org/en-US/docs/Web/CSS/flex",target:"_blank",children:"flex"})," to align item name and delete button"]}),snippet:`.item{
+</html>`}),e.jsx(t,{text:e.jsxs("p",{children:["Import css stylesheet ",e.jsx("a",{href:"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link",children:"link"})," in ",e.jsx("a",{href:"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head",children:"head"})]}),snippet:'<link rel="stylesheet" href="./CookieClickerE.css" />'}),e.jsx(t,{text:e.jsxs("p",{children:["Import ",e.jsx("a",{href:"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#basic_usage",target:"_blank",children:"script"})," at end of body"]}),snippet:'<script src="./cookieClickerE.js"><\/script>'})]}),e.jsx("br",{}),e.jsx("button",{onClick:()=>{s.current.showModal()},children:"View HTML Code"})]}),e.jsxs("div",{className:"section css",children:[e.jsx("h2",{children:"CSS Breakdown"}),e.jsx("div",{className:"Breakdown",children:e.jsx(t,{text:e.jsxs("p",{children:["Style an item as a ",e.jsx("a",{href:"https://developer.mozilla.org/en-US/docs/Web/CSS/flex",target:"_blank",children:"flex"})," to align item name and delete button"]}),snippet:`.item{
     display: flex;
     gap: 10px;
     padding: 5px;
@@ -84,29 +81,112 @@ document.addEventListener('DOMContentLoaded', () => {
         list.appendChild(itemDiv);
     })
 })`,type:"js"})]}),e.jsx("br",{}),e.jsx("button",{onClick:()=>{n.current.showModal()},children:"View JS Code"})]})]}),e.jsx("div",{className:"BackCenter",children:e.jsx(m,{text:"Back",onClick:()=>{window.location.href="/ultimate-programming-guide/WebDesign/Projects/"}})})]}),e.jsx(l,{dialogRef:s,CodeType:"HTML",code:`<!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="./TodoE.css" />
-      <title>Todo List Example</title>
+      <title>Cookie Clicker Example</title>
+      <link rel="stylesheet" href="./cookieClicker.css" />
   </head>
   <body>
-    <h1 class="title">Todo List</h1>
-    <ul class="list">
-    
-    </ul>
-    <div class="add">
-        <input type="text" id="addInput" placeholder="New Todo item">
-        <button id="addBtn">Add to List</button>
-    </div>
-    <script src="./TodoE.js" defer><\/script>
+     
+      <h2 id="cookieCount">Cookies: 0</h2>
+      <label id="cookiesPerSecond">Cookies Per Second: 0</label>
+      <br>
+      <br>
+      <img src="./cookie.png" alt="cookie" id="cookieImg">
+      <h2><u>Buildings</u></h2>
+      <div class="buildings">
+          <div class="building" id="cursor">
+              <label class="building-title">Cursor</label>
+              <br>
+              <label class="building-price" id="cursor-price">10 Cookies</label>
+          </div>
+          
+  
+      </div>
+      <h2><u>Upgrades</u></h2>
+  
+      <div class="upgrades">
+          <div class="upgrade" id="mouse">
+              <div class="upgrade-icon">
+                  <img src="" alt="mouse" id="mouseImg">
+              </div>
+              <div class="upgrade-popup">
+                  <label>Mouse Upgrade</label>
+                  <br>
+                  <label class="price">Price: 50 cookies</label>
+                  <br>
+                  <label for="">Discription: Increase the amount of cookies gained per click</label>
+              </div>
+          </div>
+      </div>
+      <script src="./CookieClicker.js" type="module"><\/script>
+  
   </body>
-</html>
-    `}),e.jsx(l,{dialogRef:d,CodeType:"CSS",code:`.item{
-  display: flex;
-  gap: 10px;
-  padding: 5px;
+  </html>
+    `}),e.jsx(l,{dialogRef:d,CodeType:"CSS",code:`#cookieImg {
+    width: 100px;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.building{
+    border: 1px black solid;
+    width: 100px;
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.building-title{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.building-price {
+    cursor: pointer;
+}
+
+.upgrade-icon{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px black dashed;
+}
+
+.upgrade-popup {
+    display: none;
+    position: absolute;
+    top:0px;
+    left:60px;
+    border: 1px black solid;
+    padding: 10px;
+    width: 300px;
+}
+
+.upgrade:hover .upgrade-popup{
+    display:inline-block;
+}
+
+.upgrade{
+    position: relative;
+}
+
+.upgrades {
+    display: flex;
+}
+
+#mouseImg {
+    width: 50px;
+    cursor: pointer;
 }
     `}),e.jsx(l,{dialogRef:n,CodeType:"JS",code:`//Get the add button, the input, and the list
 const addBtn = document.getElementById('addBtn');

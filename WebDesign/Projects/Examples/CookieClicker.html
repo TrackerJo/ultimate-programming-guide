@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker Example</title>
+  <script type="module" crossorigin src="/ultimate-programming-guide/assets/webDesignCookieClickerE-De-w1Zq7.js"></script>
+  <link rel="modulepreload" crossorigin href="/ultimate-programming-guide/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="/ultimate-programming-guide/assets/webDesignCookieClickerE-CfFOY59A.css">
+</head>
+<body>
+   
+    <h2 id="cookieCount">Cookies: 0</h2>
+    <label id="cookiesPerSecond">Cookies Per Second: 0</label>
+    <br>
+    <br>
+    <img src="/ultimate-programming-guide/assets/cookie-C09Ke2ld.png" alt="cookie" id="cookieImg">
+    <h2><u>Buildings</u></h2>
+    <div class="buildings">
+        <div class="building" id="cursor">
+            <label class="building-title">Cursor</label>
+            <br>
+            <label class="building-price" id="cursor-price">10 Cookies</label>
+        </div>
+        
+
+    </div>
+    <h2><u>Upgrades</u></h2>
+
+    <div class="upgrades">
+        <div class="upgrade" id="mouse">
+            <div class="upgrade-icon">
+                <img src="data:image/png;base64,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" alt="mouse" id="mouseImg">
+            </div>
+            <div class="upgrade-popup">
+                <label>Mouse Upgrade</label>
+                <br>
+                <label class="price">Price: 50 cookies</label>
+                <br>
+                <label for="">Discription: Increase the amount of cookies gained per click</label>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
