@@ -35,7 +35,7 @@ function CodeWindow({dialogRef, CodeType, code}: CodeWindowProps) {
     <dialog className="code-dialog" ref={dialogRef}>
         <div className="code-window">
             <img src={CloseIcon} alt="close" className="close-icon" onClick={() => dialogRef.current!.close()}/>
-            <img src={CopyIcon} alt="copy" className='copyIcon' onClick={async() => {
+            <img src={CopyIcon} alt="copy" className='copy-icon' onClick={async() => {
                     await navigator.clipboard.writeText(code)
                     alert('Copied code snippet to clipboard')
 

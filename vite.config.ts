@@ -16,17 +16,22 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        index: resolve(root,  'index.html'),
+        index: resolve(root, 'index.html'),
         webDesign: resolve(root, 'WebDesign', 'index.html'),
-        webDesignTutorials: resolve(root, 'WebDesign', 'Tutorials', 'index.html'),
-        webDesignResources: resolve(root, 'WebDesign', 'resources.html'),
+
+        webDesignResources: resolve(root, 'WebDesign', 'Resources', 'index.html'),
         webDesignProjects: resolve(root, 'WebDesign', 'Projects', 'index.html'),
-        webDesignTodoList: resolve(root, 'WebDesign', 'Projects', 'ToDo','index.html'),
+        webDesignTodoList: resolve(root, 'WebDesign', 'Projects', 'ToDo', 'index.html'),
         webDesignTicTacToe: resolve(root, 'WebDesign', 'Projects', 'TicTacToe', 'index.html'),
-        webDesignTodoListE: resolve(root, 'WebDesign', 'Projects', 'Examples' ,'Todo.html'),
-        webDesignTicTacToeE: resolve(root, 'WebDesign', 'Projects', 'Examples' ,'TicTacToe.html'),
+        webDesignTodoListE: resolve(root, 'WebDesign', 'Projects', 'Examples', 'Todo.html'),
+        webDesignTicTacToeE: resolve(root, 'WebDesign', 'Projects', 'Examples', 'TicTacToe.html'),
         webDesignCookieClicker: resolve(root, 'WebDesign', 'Projects', 'CookieClicker', 'index.html'),
-        webDesignCookieClickerE: resolve(root, 'WebDesign', 'Projects', 'Examples', 'CookieClicker.html')
+        webDesignCookieClickerE: resolve(root, 'WebDesign', 'Projects', 'Examples', 'CookieClicker.html'),
+
+        unity: resolve(root, 'Unity', 'index.html'),
+        unityResources: resolve(root, 'Unity', 'Resources', 'index.html'),
+        flutter: resolve(root, 'Flutter', 'index.html'),
+        flutterResources: resolve(root, 'Flutter', 'Resources', 'index.html'),
 
       }
     }

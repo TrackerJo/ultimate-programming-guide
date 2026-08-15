@@ -1,7 +1,7 @@
 :root {
   --border: rgb(3, 169, 244);
-  
-    --g1: rgb(98, 0, 234);
+
+  --g1: rgb(98, 0, 234);
   --g2: rgb(236, 64, 122);
   --g3: rgb(253, 216, 53);
   --u1: rgb(72, 59, 137);
@@ -31,9 +31,11 @@
   --f1: rgb(255, 230, 0);
   --f2: rgb(255, 153, 0);
   --f3: rgb(255, 242, 0);
-    
-  
-}.card {
+
+
+}
+
+.card {
   aspect-ratio: 6 / 1;
   border: 0.5vmin solid var(--border);
   cursor: pointer;
@@ -41,7 +43,7 @@
   width: 50vmin;
   display: flex;
   justify-content: center;
-  align-items: center ;
+  align-items: center;
 }
 
 .card:hover:before {
@@ -49,29 +51,46 @@
   transform: scale(1.02, 1.12);
 }
 
-.card:hover > .card-content {
+.card.isMobile:before {
+  background-position: 100% 100%;
+  transform: scale(1.02, 1.12);
+}
+
+.card:hover>.card-content {
   background-position: -10% 0%;
 }
 
-.card:hover > .card-icon {
-  color: white; 
+.card.isMobile>.card-content {
+  background-position: -10% 0%;
 }
 
-.card:hover > .card-content > .card-subtitle > .card-subtitle-word {  
+.card.isMobile>.card-icon {
+  color: white;
+}
+
+.card:hover>.card-icon {
+  color: white;
+}
+
+.card:hover>.card-content>.card-subtitle>.card-subtitle-word {
   opacity: 1;
   transform: translateY(0%);
   transition: opacity 0ms, transform 200ms cubic-bezier(.90, .06, .15, .90);
 }
 
+.card.isMobile>.card-content>.card-subtitle>.card-subtitle-word {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity 0ms, transform 200ms cubic-bezier(.90, .06, .15, .90);
+
+}
 
 .w3schools:before {
-  background: linear-gradient(
-    130deg, 
-    transparent 0% 33%, 
-    green 66%, 
-    lightgreen 83.5%, 
-    darkgreen 100%
-  );
+  background: linear-gradient(130deg,
+      transparent 0% 33%,
+      green 66%,
+      lightgreen 83.5%,
+      darkgreen 100%);
   background-position: 0% 0%;
   background-size: 300% 300%;
   content: "";
@@ -86,13 +105,11 @@
 }
 
 .freecodecamp:before {
-  background: linear-gradient(
-    130deg, 
-    transparent 0% 33%, 
-    rgb(255, 224, 192) 66%, 
-     rgb(255, 131, 64) 83.5%, 
-    rgb(255, 224, 192) 100%
-  );
+  background: linear-gradient(130deg,
+      transparent 0% 33%,
+      rgb(255, 224, 192) 66%,
+      rgb(255, 131, 64) 83.5%,
+      rgb(255, 224, 192) 100%);
   background-position: 0% 0%;
   background-size: 300% 300%;
   content: "";
@@ -107,13 +124,11 @@
 }
 
 .codecademy:before {
-  background: linear-gradient(
-    130deg, 
-    transparent 0% 33%, 
-    #c90075 66%, 
-    rgb(251, 206, 164) 83.5%, 
-    #c90075 100%
-  );
+  background: linear-gradient(130deg,
+      transparent 0% 33%,
+      #c90075 66%,
+      rgb(251, 206, 164) 83.5%,
+      #c90075 100%);
   background-position: 0% 0%;
   background-size: 300% 300%;
   content: "";
@@ -125,17 +140,15 @@
   transition: background-position 350ms ease, transform 350ms ease;
   width: 100%;
   z-index: 1;
- 
+
 }
 
 .introHtmlKS:before {
-  background: linear-gradient(
-    130deg, 
-    transparent 0% 33%, 
-   blue 66%, 
-    lightblue 83.5%, 
-    darkblue 100%
-  );
+  background: linear-gradient(130deg,
+      transparent 0% 33%,
+      blue 66%,
+      lightblue 83.5%,
+      darkblue 100%);
   background-position: 0% 0%;
   background-size: 300% 300%;
   content: "";
@@ -147,17 +160,15 @@
   transition: background-position 350ms ease, transform 350ms ease;
   width: 100%;
   z-index: 1;
- 
+
 }
 
 .introHtmlKP:before {
-  background: linear-gradient(
-    130deg, 
-    transparent 0% 33%, 
-   red 66%, 
-    rgb(249, 75, 75) 83.5%, 
-    darkred 100%
-  );
+  background: linear-gradient(130deg,
+      transparent 0% 33%,
+      red 66%,
+      rgb(249, 75, 75) 83.5%,
+      darkred 100%);
   background-position: 0% 0%;
   background-size: 300% 300%;
   content: "";
@@ -169,17 +180,15 @@
   transition: background-position 350ms ease, transform 350ms ease;
   width: 100%;
   z-index: 1;
- 
+
 }
 
 .introCSSKP:before {
-  background: linear-gradient(
-    130deg, 
-    transparent 0% 33%, 
-   green 66%, 
-   lightgreen 83.5%, 
-    darkgreen 100%
-  );
+  background: linear-gradient(130deg,
+      transparent 0% 33%,
+      green 66%,
+      lightgreen 83.5%,
+      darkgreen 100%);
   background-position: 0% 0%;
   background-size: 300% 300%;
   content: "";
@@ -191,18 +200,16 @@
   transition: background-position 350ms ease, transform 350ms ease;
   width: 100%;
   z-index: 1;
- 
+
 }
 
 
 .introWebKP:before {
-  background: linear-gradient(
-    130deg, 
-    transparent 0% 33%, 
-   orange 66%, 
-    rgb(255, 202, 103) 83.5%, 
-    darkorange 100%
-  );
+  background: linear-gradient(130deg,
+      transparent 0% 33%,
+      orange 66%,
+      rgb(255, 202, 103) 83.5%,
+      darkorange 100%);
   background-position: 0% 0%;
   background-size: 300% 300%;
   content: "";
@@ -214,17 +221,15 @@
   transition: background-position 350ms ease, transform 350ms ease;
   width: 100%;
   z-index: 1;
- 
+
 }
 
 .mdn:before {
-  background: linear-gradient(
-    130deg, 
-    transparent 0% 33%, 
-    rgb(33, 33, 33) 66%, 
-   rgb(90, 148, 255) 83.5%, 
-    rgb(33, 33, 33) 100%
-  );
+  background: linear-gradient(130deg,
+      transparent 0% 33%,
+      rgb(33, 33, 33) 66%,
+      rgb(90, 148, 255) 83.5%,
+      rgb(33, 33, 33) 100%);
   background-position: 0% 0%;
   background-size: 300% 300%;
   content: "";
@@ -236,7 +241,7 @@
   transition: background-position 350ms ease, transform 350ms ease;
   width: 100%;
   z-index: 1;
- 
+
 }
 
 .card-content {
@@ -252,7 +257,7 @@
   transition: background-position 350ms ease;
   width: calc(100% - 10vmin);
   z-index: 2;
-  
+
 }
 
 .card-title,
@@ -264,7 +269,7 @@
 }
 
 .card-title {
-  text-wrap: nowrap;
+  /* text-wrap: nowrap; */
 }
 
 .card-subtitle {
@@ -276,7 +281,7 @@
   display: inline-block;
   margin: 0vmin 0.3vmin;
   opacity: 0;
-  position: relative;  
+  position: relative;
   transform: translateY(40%);
   transition: none;
 }
@@ -290,7 +295,5 @@
   position: absolute;
   transition: color 250ms ease;
   z-index: 2;
- 
+
 }
-
-

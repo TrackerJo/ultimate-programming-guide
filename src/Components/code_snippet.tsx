@@ -9,11 +9,13 @@ import CopyIcon from '../assets/copy.png'
 
 type CodeSnippetProps = {
     snippet: string
-    type: string
+    type: string,
+    x: number,
+    y: number
 
 }
 
-function CodeSnippet({snippet, type}: CodeSnippetProps) {
+function CodeSnippet({ snippet, type, x, y }: CodeSnippetProps) {
 
     hljs.registerLanguage('xml', html);
     hljs.registerLanguage('css', css);
@@ -22,19 +24,19 @@ function CodeSnippet({snippet, type}: CodeSnippetProps) {
 
 
         hljs.highlightAll()
-    
-    } , [])
-    
+
+    }, [])
+
 
     return (
-        <div className="snippet up">
+        <div className="snippet up" style={{ top: y, left: x }}>
             <div className='snippetTopbar'>
                 <h3 className='snippetTitle'>Code Snippet</h3>
-                <img src={CopyIcon} alt="copy" className='copyIcon' onClick={async() => {
+                <img src={CopyIcon} alt="copy" className='copyIcon' onClick={async () => {
                     await navigator.clipboard.writeText(snippet)
                     alert('Copied code snippet to clipboard')
 
-                }}/>
+                }} />
             </div>
             <pre>
                 <code className={(type == "html" ? 'language-xml ' : type == "css" ? 'language-css ' : 'language-js ') + "snippet-code"}>

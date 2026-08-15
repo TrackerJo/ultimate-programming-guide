@@ -4,35 +4,39 @@
     font-size: 1.2em;
     color: #fff;
     background: #282c34;
-    
+
     /* (A2) DIMENSIONS */
     padding: 20px;
     border-radius: 10px;
     max-width: 500px;
     text-align: start;
+
 }
 
 
 .snippet {
-    position: relative;
+    position: absolute;
+    z-index: 10;
 
-    left: -15px;
+    /* left: -15px; */
+    /* top: 5vh; */
     /* margin: 30px; */
-  }
-.snippetTitle{
+}
+
+.snippetTitle {
     margin-bottom: 0px;
     margin-top: 0px;
     line-height: normal;
 }
 
-.snippetTopbar{
+.snippetTopbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.copyIcon{
+.copyIcon {
     color: #90ff11;
     cursor: pointer;
 

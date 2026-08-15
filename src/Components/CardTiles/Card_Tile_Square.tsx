@@ -1,5 +1,5 @@
 import "./Card_Tile_Square.css";
-
+import {isMobile} from 'react-device-detect';
 type CardTileProps = {
     title: string;
     subtitle: string;
@@ -34,7 +34,7 @@ function CardTileSquare({title, subtitle, theme, onClick}: CardTileProps) {
 
 
     return (
-        <div className={"cardSquare " + theme} onClick={onClick}>
+        <div className={"cardSquare " + theme + (isMobile ? " isMobile" : "")} onClick={onClick}>
             <div className="card-content-square"> 
                 <h3 className="card-title-square">{title}</h3>
                 <h4 className="card-subtitle-square">

@@ -13,11 +13,10 @@ function WebDesign() {
       <div id="welcome" className="selectedDiv">
         <FallingCode/>
         <h1 className="title">Web Design</h1>
-        <p className="subtitle">Learn HTML, Javascript, and CSS to create webpages.</p>
+        <p className="subtitle">Learn HTML, Javascript, and CSS to create webpages</p>
         <div className='courses'>
-          <CardTileVertical title="Tutorials" subtitle="Basic tutorials to quickly start making websites" theme="tutorials" onClick={() => {window.location.href = window.location.href + "Tutorials/"}}/>
           <CardTileVertical title="Projects" subtitle="List of applicable projects to quickly get familiar with Web Design" theme="projects" onClick={() => {window.location.href = window.location.href + "Projects/"}}/>
-          <CardTileVertical title="Resources" subtitle="List of applicable projects to quickly get familiar with Web Design" theme="resources" onClick={() => {window.location.href = window.location.href + "resources.html"}}/>
+          <CardTileVertical title="Resources" subtitle="List of resoures to learn how to make websites" theme="resources" onClick={() => {window.location.href = window.location.href + "Resources/"}}/>
 
         </div>
         <br />

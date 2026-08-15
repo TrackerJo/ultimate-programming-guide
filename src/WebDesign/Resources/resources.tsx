@@ -2,13 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './resources.css'
-import '../index.css'
+import '../../index.css'
 
 
-import FallingCode from '../Components/FallingCode/falling_code'
-import CardTileHorizontal from '../Components/CardTiles/Card_Tile_Horizontal'
-import CircleButton from '../Components/circle_button'
-import CardTileSquare from '../Components/CardTiles/Card_Tile_Square'
+import FallingCode from '../../Components/FallingCode/falling_code'
+import CardTileHorizontal from '../../Components/CardTiles/Card_Tile_Horizontal'
+import CircleButton from '../../Components/circle_button'
+import CardTileSquare from '../../Components/CardTiles/Card_Tile_Square'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

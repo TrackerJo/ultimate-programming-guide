@@ -20,3 +20,17 @@
     margin-bottom: 2rem;
 }
 
+
+@media only screen and (max-width: 728px) {
+  
+    .sections{
+        flex-direction: column;
+    }
+    
+    .section .card {
+        width: unset !important;
+    }
+    .section .cardSquare {
+        width: unset !important;
+    }
+}

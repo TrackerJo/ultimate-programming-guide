@@ -48,6 +48,11 @@
   transform: scale(1.02, 1.12);
 }
 
+.cardSquare.isMobile:before {
+  background-position: 100% 100%;
+  transform: scale(1.02, 1.12);
+}
+
 .cardSquare:hover > .card-content-square {
   background-position: -10% 0%;
 }
@@ -63,6 +68,20 @@
 }
 
 
+.cardSquare.isMobile > .card-content-square > .card-subtitle-square > .card-subtitle-word {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity 0ms, transform 200ms cubic-bezier(.90, .06, .15, .90);
+
+}
+
+.cardSquare.isMobile > .card-content-square {
+  background-position: -10% 0%;
+}
+
+.cardSquare.isMobile > .card-icon {
+  color: white; 
+}
 .w3schools:before {
   background: linear-gradient(
     130deg, 
@@ -263,7 +282,7 @@
 }
 
 .card-title-square {
-  text-wrap: nowrap;
+
   font-size: 3vmin;
 }
 
